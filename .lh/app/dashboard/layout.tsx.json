@@ -1,0 +1,38 @@
+{
+    "sourceFile": "app/dashboard/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1705023675053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1705023799431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,13 @@\n import React from \"react\";\n import SideNav from \"../ui/dashboard/sidenav\";\n \n export default function Layout({ children } : { children: React.ReactNode}) {\n-  \n+  return (\n+    <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n+      <div className=\"w-full flex-none md:w-64\">\n+        <SideNav/>\n+      </div>\n+      <div className=\"flex-grow p-6 md:overflow-y-auto md:p-12\">{ children }</div>\n+    </div>\n+  );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1705023917844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n export default function Layout({ children } : { children: React.ReactNode}) {\n   return (\n     <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n-      <div className=\"w-full flex-none md:w-64\">\n+      <div className=\"w-full flex-none md:w-80\">\n         <SideNav/>\n       </div>\n       <div className=\"flex-grow p-6 md:overflow-y-auto md:p-12\">{ children }</div>\n     </div>\n"
+                },
+                {
+                    "date": 1705023928393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,11 @@\n \n export default function Layout({ children } : { children: React.ReactNode}) {\n   return (\n     <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n-      <div className=\"w-full flex-none md:w-80\">\n+      <div className=\"w-full flex-none md:w-64\">\n         <SideNav/>\n       </div>\n-      <div className=\"flex-grow p-6 md:overflow-y-auto md:p-12\">{ children }</div>\n+      <div className=\"flex-grow p-10 md:overflow-y-auto md:p-12\">{ children }</div>\n     </div>\n   );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1705023937680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,8 @@\n     <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n       <div className=\"w-full flex-none md:w-64\">\n         <SideNav/>\n       </div>\n-      <div className=\"flex-grow p-10 md:overflow-y-auto md:p-12\">{ children }</div>\n+      <div className=\"flex-grow p-6 md:overflow-y-auto md:p-20\">{ children }</div>\n     </div>\n   );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1705023949153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import React from \"react\";\n+import SideNav from \"../ui/dashboard/sidenav\";\n+\n+export default function Layout({ children } : { children: React.ReactNode}) {\n+  return (\n+    <div className=\"flex h-screen flex-col md:flex-row md:overflow-hidden\">\n+      <div className=\"w-full flex-none md:w-64\">\n+        <SideNav/>\n+      </div>\n+      <div className=\"flex-grow p-6 md:overflow-y-auto md:p-12\">{ children }</div>\n+    </div>\n+  );\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1705023675053,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport SideNav from \"../ui/dashboard/sidenav\";\n\nexport default function Layout({ children } : { children: React.ReactNode}) {\n  \n}"
+        }
+    ]
+}

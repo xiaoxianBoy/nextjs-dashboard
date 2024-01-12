@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1705018376544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1705019465626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import '@/app/ui/global.css'\n+import { inter } from './ui/fonts';\n+\n+export default function RootLayout({\n+  children,\n+}: {\n+  children: React.ReactNode;\n+}) {\n+  return (\n+    <html lang=\"en\">\n+      <body>{children}</body>\n+    </html>\n+  );\n+}\n"
+                },
+                {
+                    "date": 1705019554042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,21 +7,8 @@\n   children: React.ReactNode;\n }) {\n   return (\n     <html lang=\"en\">\n-      <body>{children}</body>\n+      <body className={`${inter.className} antialiased`}>{children}</body>\n     </html>\n   );\n }\n-import '@/app/ui/global.css'\n-\n-export default function RootLayout({\n-  children,\n-}: {\n-  children: React.ReactNode;\n-}) {\n-  return (\n-    <html lang=\"en\">\n-      <body>{children}</body>\n-    </html>\n-  );\n-}\n"
+                }
+            ],
+            "date": 1705018376544,
+            "name": "Commit-0",
+            "content": "import '@/app/ui/global.css'\n\nexport default function RootLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body>{children}</body>\n    </html>\n  );\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/ui/acme-logo.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1705020565669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1705020565669,
+            "name": "Commit-0",
+            "content": "import { GlobeAltIcon } from '@heroicons/react/24/outline';\nimport { lusitana } from '@/app/ui/fonts';\n\nexport default function AcmeLogo() {\n  return (\n    <div\n      className={`${lusitana.className} flex flex-row items-center leading-none text-white`}\n    >\n      <GlobeAltIcon className=\"h-12 w-12 rotate-[15deg]\" />\n      <p className=\"text-[44px]\">Acme</p>\n    </div>\n  );\n}\n"
+        }
+    ]
+}

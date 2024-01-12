@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/dashboard/customers/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1705023424474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1705023424474,
+            "name": "Commit-0",
+            "content": "export default function Page() {\n  return <p>Customers Page</p>;\n}"
+        }
+    ]
+}
