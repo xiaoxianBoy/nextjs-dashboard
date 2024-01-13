@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1705023333044,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1705116638024,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,30 @@\n-export default function Page() {\n-  return <p>Dashboard Page</p>;\n+import { Card } from '@/app/ui/dashboard/cards';\n+import RevenueChart from '@/app/ui/dashboard/revenue-chart';\n+import LatestInvoices from '@/app/ui/dashboard/latest-invoices';\n+import { lusitana } from '@/app/ui/fonts';\n+import { fetchRevenue } from '../lib/data';\n+ \n+export default async function Page() {\n+  const revenue = await fetchRevenue();\n+  return (\n+    <main>\n+      <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>\n+        Dashboard\n+      </h1>\n+      <div className=\"grid gap-6 sm:grid-cols-2 lg:grid-cols-4\">\n+        {/* <Card title=\"Collected\" value={totalPaidInvoices} type=\"collected\" /> */}\n+        {/* <Card title=\"Pending\" value={totalPendingInvoices} type=\"pending\" /> */}\n+        {/* <Card title=\"Total Invoices\" value={numberOfInvoices} type=\"invoices\" /> */}\n+        {/* <Card\n+          title=\"Total Customers\"\n+          value={numberOfCustomers}\n+          type=\"customers\"\n+        /> */}\n+      </div>\n+      <div className=\"mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8\">\n+        <RevenueChart revenue={revenue}  />\n+        {/* <LatestInvoices latestInvoices={latestInvoices} /> */}\n+      </div>\n+    </main>\n+  );\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1705023333044,
